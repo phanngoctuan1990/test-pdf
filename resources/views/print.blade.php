@@ -299,6 +299,7 @@
                     </tr>
                 </tbody>
             </table>
+            <br />
             <table class="table table-sm table-bordered mt-2 mb-1 text-sm">
                 <tbody>
                     <thead class="text-center bg-gray">
@@ -472,6 +473,29 @@
                         <td class="text-center">：</td>
                         <td></td>
                     </tr>
+                    @for ($i = 0; $i < 3300; $i++)
+                    <tr>
+                        <td class="text-center text-lg">{{ $data["col1"] }}</td>
+                        <td class="text-center">{{ $data["col2"] }}</td>
+                        <td class="col-blue"></td>
+                        <td class="text-center text-lg">{{ $data["col3"] }}</td>
+                        <td>{{ $data["col4"] }}</td>
+                        <td>{{ $data["col5"] }}</td>
+                        <td class="text-center">{{ $data["col6"] }}</td>
+                        <td class="col-blue"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-center">{{ $data["col7"] }}</td>
+                        <td class="text-center">{{ $data["col8"] }}</td>
+                        <td></td>
+                        <td class="text-center">：</td>
+                        <td class="text-center">：</td>
+                        <td class="text-center">：</td>
+                        <td class="text-center">：</td>
+                        <td></td>
+                    </tr>
+                    @endfor
                     <tr>
                         <td></td>
                         <td></td>

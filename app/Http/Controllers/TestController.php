@@ -18,7 +18,16 @@ class TestController extends Controller
 
     public function postPrint()
     {
-        $data = \Request::all();
+        $data = [
+            'col1' => 54265,
+            'col2' => 1,
+            'col3' => 1200623,
+            'col4' => 'ﾃｽﾄ - 1200623',
+            'col5' => 'ﾃｽﾄ',
+            'col6' => '男',
+            'col7' => '09:00',
+            'col8' => '18:00',
+        ];
         $pdf = \PDF::loadView('print', ['data' => $data])
             ->setPaper('a4')
             ->setOrientation('landscape')

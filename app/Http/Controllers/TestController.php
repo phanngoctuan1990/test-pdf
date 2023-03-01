@@ -8,7 +8,17 @@ class TestController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $data = [
+            'col1' => 54265,
+            'col2' => 1,
+            'col3' => 1200623,
+            'col4' => 'ﾃｽﾄ - 1200623',
+            'col5' => 'ﾃｽﾄ',
+            'col6' => '男',
+            'col7' => '09:00',
+            'col8' => '18:00',
+        ];
+        return view('index', ['data' => $data]);
     }
 
     public function getPrint()

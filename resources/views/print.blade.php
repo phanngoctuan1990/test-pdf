@@ -83,6 +83,17 @@
             .bg-gray {
                 background-color: #e7e6e6;
             }
+            thead {
+                display: table-header-group;
+            }
+            tfoot {
+                display: table-row-group;
+            }
+            tr {
+                background-color: blue !important;
+                page-break-after: always !important;
+                page-break-inside: avoid !important;
+            }
         </style>
     </head>
     <body>

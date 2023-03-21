@@ -363,220 +363,57 @@
                             <td style="width: 5%">休憩(深夜)</td>
                         </tr>
                     </thead>
+                    @foreach ($data as $key => $item)
                     <tr>
-                        <td class="text-center text-lg">(例)</td>
-                        <td></td>
-                        <td class="col-blue text-center">✔</td>
-                        <td class="text-center font-weight-bold text-lg">
-                            9999999
+                        <td class="text-center text-lg">{{ $item["col1"] }}</td>
+                        <td class="text-center">{{ $item["col2"] }}</td>
+                        <td
+                            class="{{
+                                generateClass($key, 'col-blue text-center')
+                            }}"
+                        >
+                            {{ $item["col3"] }}
                         </td>
-                        <td class="font-weight-bold">エントリー　テス男</td>
-                        <td class="font-weight-bold">エントリーテスト</td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center font-weight-bold">09:00</td>
-                        <td class="text-center font-weight-bold">18:00</td>
-                        <td class="text-center">✔</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="text-center text-lg">(例)</td>
-                        <td></td>
-                        <td class="col-blue text-center">✔</td>
-                        <td class="text-center font-weight-bold text-lg">
-                            9999999
+                        <td
+                            class="{{
+                                generateClass($key, 'text-center text-lg')
+                            }}"
+                        >
+                            {{ $item["col4"] }}
                         </td>
-                        <td class="font-weight-bold">エントリー　テス男</td>
-                        <td class="font-weight-bold">エントリーテスト</td>
-                        <td></td>
+                        <td class="{{ generateClass($key) }}">
+                            {{ $item["col5"] }}
+                        </td>
+                        <td>{{ $item["col6"] }}</td>
+                        <td class="text-center">{{ $item["col7"] }}</td>
                         <td class="col-blue"></td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td class="text-center font-weight-bold">09:00</td>
-                        <td class="text-center font-weight-bold">18:00</td>
-                        <td></td>
-                        <td class="text-center font-weight-bold">09:00</td>
-                        <td class="text-center font-weight-bold">20:00</td>
-                        <td class="text-center font-weight-bold">01:30</td>
-                        <td class="text-center">：</td>
+                        <td class="{{ generateClass($key, 'text-center') }}">
+                            {{ $item["col8"] }}
+                        </td>
+                        <td class="{{ generateClass($key, 'text-center') }}">
+                            {{ $item["col9"] }}
+                        </td>
+                        <td class="{{ generateClass($key, 'text-center') }}">
+                            {{ $item["col10"] }}
+                        </td>
+                        <td class="{{ generateClass($key, 'text-center') }}">
+                            {{ $item["col11"] }}
+                        </td>
+                        <td class="{{ generateClass($key, 'text-center') }}">
+                            {{ $item["col12"] }}
+                        </td>
+                        <td class="{{ generateClass($key, 'text-center') }}">
+                            {{ $item["col13"] }}
+                        </td>
+                        <td class="{{ generateClass($key, 'text-center') }}">
+                            ：
+                        </td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td class="text-center text-lg">54265</td>
-                        <td class="text-center">1</td>
-                        <td class="col-blue"></td>
-                        <td class="text-center text-lg">1200623</td>
-                        <td>ﾃｽﾄ-1200623</td>
-                        <td>ﾃｽﾄ</td>
-                        <td class="text-center">男</td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center">09:00</td>
-                        <td class="text-center">18:00</td>
-                        <td></td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="text-center text-lg">55181</td>
-                        <td class="text-center">2</td>
-                        <td class="col-blue"></td>
-                        <td class="text-center text-lg">1200642</td>
-                        <td>やすもと ﾃｽﾄ</td>
-                        <td>ﾀｯﾀｯﾀｯﾀ</td>
-                        <td class="text-center">男</td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center">09:00</td>
-                        <td class="text-center">18:00</td>
-                        <td></td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="text-center text-lg">55959</td>
-                        <td class="text-center">3</td>
-                        <td class="col-blue"></td>
-                        <td class="text-center text-lg">1200642</td>
-                        <td>やすもと ﾃｽﾄ</td>
-                        <td>ﾀｯﾀｯﾀｯﾀ</td>
-                        <td class="text-center">男</td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center">09:00</td>
-                        <td class="text-center">18:00</td>
-                        <td></td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="col-blue"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td class="text-center">：</td>
-                        <td></td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
             <p class="float-right pr-3 text-sm">

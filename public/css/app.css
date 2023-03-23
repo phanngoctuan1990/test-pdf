@@ -1,0 +1,72 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+footer,
+header,
+menu,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+    font-size: 14px;
+}
+ul {
+    list-style: none;
+}
+q {
+    quotes: none;
+}
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+.text-sm {
+    font-size: 11px;
+}
+.text-lg {
+    font-size: 18px;
+}
+.text-xl {
+    font-size: 20px;
+}
+.col-blue {
+    background-color: #bdd7ee;
+}
+.table-bordered thead th {
+    border-bottom-width: 1px;
+}
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #343a40;
+}
+.table thead th,
+.table thead td {
+    border-bottom: 1px solid #343a40;
+}
+.border-gray {
+    border: 1px solid #343a40 !important;
+}
+.bg-gray {
+    background-color: #e7e6e6;
+}

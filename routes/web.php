@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [TestController::class, 'index'])->name('index');
 Route::get('/print', [TestController::class, 'getPrint'])->name('getprint');
 Route::post('/print', [TestController::class, 'postPrint'])->name('postPrint');
+Route::get('/print2', [TestController::class, 'getPrint2'])->name('getPrint2');
 Route::post('/complete', [TestController::class, 'complete'])->name('complete');

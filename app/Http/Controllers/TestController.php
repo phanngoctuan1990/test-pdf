@@ -244,6 +244,7 @@ class TestController extends Controller
 
     public function postPrint()
     {
+        array_pop(self::DATA);
         $pdf = \PDF::loadView('print', ['data' => self::DATA])
             ->setPaper('a4')
             ->setOrientation('landscape')

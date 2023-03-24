@@ -31,7 +31,7 @@ RUN docker-php-ext-install exif pcntl
 RUN docker-php-ext-configure gd
 RUN docker-php-ext-install -j$(nproc) gd 
 RUN wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
-RUN which wkhtmltopdf
+RUN apt-mark hold libssl-dev
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

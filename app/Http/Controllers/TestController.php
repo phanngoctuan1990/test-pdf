@@ -244,7 +244,6 @@ class TestController extends Controller
 
     public function postPrint()
     {
-        array_pop(self::DATA);
         $pdf = \PDF::loadView('print', ['data' => self::DATA])
             ->setPaper('a4')
             ->setOrientation('landscape')
@@ -265,7 +264,7 @@ class TestController extends Controller
         ];
 
         $data = [];
-        for ($i = 0; $i < 101; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             $data[] = self::DATA;
         }
 

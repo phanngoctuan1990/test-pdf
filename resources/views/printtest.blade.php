@@ -7,7 +7,7 @@
         <title>Test PDF</title>
         <link
             rel="stylesheet"
-            href="http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         />
 
         <style>

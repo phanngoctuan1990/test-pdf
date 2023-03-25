@@ -127,9 +127,9 @@
                 <span style="padding-left: 320px">TEL：011-7602-6586</span>
             </div>
         </div>
-        <table class="table table-borderless mt-2 mb-1">
+        <table class="table table-borderless mt-2">
             <tbody>
-                <tr>
+                <tr style="height: 20px">
                     <td style="width: 50%; padding: 0">
                         <table class="table table-bordered text-center">
                             <tbody>

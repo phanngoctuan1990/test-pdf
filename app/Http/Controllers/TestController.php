@@ -155,81 +155,6 @@ class TestController extends Controller
             'col12' => '：',
             'col13' => '：',
         ],
-        [
-            'col1' => 55959,
-            'col2' => 3,
-            'col3' => '',
-            'col4' => 1200642,
-            'col5' => 'やすもと ﾃｽﾄ',
-            'col6' => 'ﾀｯﾀｯﾀｯﾀ',
-            'col7' => '男',
-            'col8' => '09:00',
-            'col9' => '18:00',
-            'col10' => '',
-            'col11' => '：',
-            'col12' => '：',
-            'col13' => '：',
-        ],
-        [
-            'col1' => 55959,
-            'col2' => 3,
-            'col3' => '',
-            'col4' => 1200642,
-            'col5' => 'やすもと ﾃｽﾄ',
-            'col6' => 'ﾀｯﾀｯﾀｯﾀ',
-            'col7' => '男',
-            'col8' => '09:00',
-            'col9' => '18:00',
-            'col10' => '',
-            'col11' => '：',
-            'col12' => '：',
-            'col13' => '：',
-        ],
-        [
-            'col1' => 55959,
-            'col2' => 3,
-            'col3' => '',
-            'col4' => 1200642,
-            'col5' => 'やすもと ﾃｽﾄ',
-            'col6' => 'ﾀｯﾀｯﾀｯﾀ',
-            'col7' => '男',
-            'col8' => '09:00',
-            'col9' => '18:00',
-            'col10' => '',
-            'col11' => '：',
-            'col12' => '：',
-            'col13' => '：',
-        ],
-        [
-            'col1' => 55959,
-            'col2' => 3,
-            'col3' => '',
-            'col4' => 1200642,
-            'col5' => 'やすもと ﾃｽﾄ',
-            'col6' => 'ﾀｯﾀｯﾀｯﾀ',
-            'col7' => '男',
-            'col8' => '09:00',
-            'col9' => '18:00',
-            'col10' => '',
-            'col11' => '：',
-            'col12' => '：',
-            'col13' => '：',
-        ],
-        // [
-        //     'col1' => 55959,
-        //     'col2' => 3,
-        //     'col3' => '',
-        //     'col4' => 1200642,
-        //     'col5' => 'やすもと ﾃｽﾄ',
-        //     'col6' => 'ﾀｯﾀｯﾀｯﾀ',
-        //     'col7' => '男',
-        //     'col8' => '09:00',
-        //     'col9' => '18:00',
-        //     'col10' => '',
-        //     'col11' => '：',
-        //     'col12' => '：',
-        //     'col13' => '：',
-        // ],
     ];
 
     public function index()
@@ -247,8 +172,7 @@ class TestController extends Controller
         $pdf = \PDF::loadView('print', ['data' => self::DATA])
             ->setPaper('a4')
             ->setOrientation('landscape')
-            ->setOption('margin-top', 2)
-            ->setOption('margin-bottom', 0);
+            ->setOption('margin-top', 2);
 
         return $pdf->inline('print.pdf');
     }
@@ -256,11 +180,13 @@ class TestController extends Controller
     public function getPrint2()
     {
         $headerHtml = view()->make('header')->render();
+        $footerHtml = view()->make('footer')->render();
         $options = [
             'orientation'   => 'landscape',
             'margin-top'   => '115mm',
-            'margin-bottom'   => '2',
+            'margin-bottom'   => '5',
             'header-html'   => $headerHtml,
+            'footer-html'   => $footerHtml,
         ];
 
         $data = [];

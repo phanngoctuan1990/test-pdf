@@ -99,10 +99,10 @@
         </style>
     </head>
     <body>
-        <table class="table table-sm table-bordered mt-2 mb-1 text-sm">
+        <table class="table table-sm table-bordered mt-5 mb-1 text-sm">
             <tbody>
                 <thead class="text-center bg-gray">
-                    <tr>
+                    <trw>
                         <td style="width: 6%" class="pt-3" rowspan="2">
                             勤怠NO
                         </td>
@@ -135,7 +135,7 @@
                         </td>
                         <td colspan="4">実績時間</td>
                         <td class="pt-3" rowspan="2" style="width: 5%">欠勤</td>
-                    </tr>
+                    </trw>
                     <tr>
                         <td style="width: 5%">開始</td>
                         <td style="width: 5%">終了</td>
@@ -146,8 +146,10 @@
                     </tr>
                 </thead>
                 @foreach ($data as $items) @foreach ($items as $key => $item)
-                <tr>
-                    <td class="text-center text-lg">{{ $item["col1"] }}</td>
+                <tr style="height: 35px">
+                    <td class="text-center text-lg">
+                        {{ $item["col1"] }}
+                    </td>
                     <td class="text-center">{{ $item["col2"] }}</td>
                     <td
                         class="{{
@@ -194,8 +196,5 @@
                 @endforeach @endforeach
             </tbody>
         </table>
-        <p class="float-right pr-3 text-sm">
-            (派遣先管理台帳・派遣元管理台帳として労働者派遣終了後3年間保存)
-        </p>
     </body>
 </html>

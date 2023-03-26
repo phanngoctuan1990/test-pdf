@@ -183,7 +183,7 @@ class TestController extends Controller
         $footerHtml = view()->make('footer')->render();
         $options = [
             'orientation'   => 'landscape',
-            'margin-top'   => '115mm',
+            'margin-top'   => '115',
             'margin-bottom'   => '5',
             'header-html'   => $headerHtml,
             'footer-html'   => $footerHtml,

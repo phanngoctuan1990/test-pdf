@@ -1,112 +1,132 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        />
 
-        <style>
-            html,
-            body,
-            div,
-            span,
-            h1,
-            h2,
-            h3,
-            p,
-            a,
-            ul,
-            li,
-            table,
-            tbody,
-            tfoot,
-            thead,
-            tr,
-            th,
-            td,
-            footer,
-            header,
-            menu,
-            nav {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                vertical-align: baseline;
-            }
-            body {
-                line-height: 1;
-                font-size: 14px;
-            }
-            ul {
-                list-style: none;
-            }
-            q {
-                quotes: none;
-            }
-            q:before,
-            q:after {
-                content: "";
-                content: none;
-            }
-            .text-sm {
-                font-size: 11px;
-            }
-            .text-lg {
-                font-size: 18px;
-            }
-            .text-xl {
-                font-size: 20px;
-            }
-            .col-blue {
-                background-color: #bdd7ee;
-            }
-            .table-bordered thead th {
-                border-bottom-width: 1px;
-            }
-            .table-bordered td,
-            .table-bordered th {
-                border: 1px solid #343a40;
-            }
-            .table thead th,
-            .table thead td {
-                border-bottom: 1px solid #343a40;
-            }
-            .border-gray {
-                border: 1px solid #343a40 !important;
-            }
-            .bg-gray {
-                background-color: #e7e6e6;
-            }
-        </style>
-    </head>
-    <body>
-        <p
-            class="text-center bg-gray border border-dark font-weight-bold text-lg p-1"
-        >
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <style>
+        html,
+        body,
+        div,
+        span,
+        h1,
+        h2,
+        h3,
+        p,
+        a,
+        ul,
+        li,
+        table,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        footer,
+        header,
+        menu,
+        nav {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+
+        body {
+            line-height: 1;
+            font-size: 14px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        q {
+            quotes: none;
+        }
+
+        q:before,
+        q:after {
+            content: "";
+            content: none;
+        }
+
+        .text-sm {
+            font-size: 11px;
+        }
+
+        .text-lg {
+            font-size: 18px;
+        }
+
+        .text-xl {
+            font-size: 20px;
+        }
+
+        .col-blue {
+            background-color: #bdd7ee;
+        }
+
+        .table-bordered thead th {
+            border-bottom-width: 1px;
+        }
+
+        .table-bordered td,
+        .table-bordered th {
+            border: 1px solid #343a40;
+        }
+
+        .table thead th,
+        .table thead td {
+            border-bottom: 1px solid #343a40;
+        }
+
+        .border-gray {
+            border: 1px solid #343a40 !important;
+        }
+
+        .bg-gray {
+            background-color: #e7e6e6;
+        }
+
+        table {
+            page-break-inside: auto;
+            border-spacing: 0;
+        }
+
+        tr {
+            page-break-inside: avoid;
+            page-break-after: always;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="text-center bg-gray border border-dark font-weight-bold text-lg p-1">
             タ　イ　ム　シ　ー　ト　(就業状況報告書)
         </p>
         <div class="clearfix">
-            <p
-                class="float-left border-left border-right border-dark text-xl p-2"
-                style="width: 45%"
-            >
+            <p class="float-left border-left border-right border-dark text-xl p-2" style="width: 45%">
                 3783-000@テスト-9086 本社
             </p>
-            <p
-                class="float-right text-center p-2 mr-5 border-bottom border-dark"
-                style="width: 20%"
-            >
+            <p class="float-right text-center p-2 mr-5 border-bottom border-dark" style="width: 20%">
                 発行日 2023年2月6日
             </p>
         </div>
         <div class="clearfix">
-            <p
-                class="float-left border border-dark p-1 text-right"
-                style="width: 45%"
-            >
+            <p class="float-left border border-dark p-1 text-right" style="width: 45%">
                 ご担当者様
             </p>
         </div>
@@ -127,26 +147,20 @@
                 <span style="padding-left: 320px">TEL：011-7602-6586</span>
             </div>
         </div>
-        <table class="table table-borderless mt-2">
+        <table class="table table-borderless">
             <tbody>
                 <tr style="height: 20px">
                     <td style="width: 50%; padding: 0">
                         <table class="table table-bordered text-center">
                             <tbody>
                                 <tr>
-                                    <td
-                                        style="width: 9%; font-size: 16px"
-                                        class="bg-gray"
-                                    >
+                                    <td style="width: 9%; font-size: 16px" class="bg-gray">
                                         受注NO
                                     </td>
                                     <td style="width: 14%; font-size: 20px">
                                         285-014
                                     </td>
-                                    <td
-                                        style="width: 6%; font-size: 11px"
-                                        class="bg-gray"
-                                    >
+                                    <td style="width: 6%; font-size: 11px" class="bg-gray">
                                         指揮命令者
                                     </td>
                                     <td style="width: 21%; font-size: 14px">
@@ -154,19 +168,13 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        style="width: 9%; font-size: 16px"
-                                        class="bg-gray"
-                                    >
+                                    <td style="width: 9%; font-size: 16px" class="bg-gray">
                                         就業日
                                     </td>
                                     <td style="width: 14%; font-size: 20px">
                                         2023/02/07
                                     </td>
-                                    <td
-                                        style="width: 6%; font-size: 11px"
-                                        class="bg-gray"
-                                    >
+                                    <td style="width: 6%; font-size: 11px" class="bg-gray">
                                         組織名
                                     </td>
                                     <td style="width: 21%; font-size: 14px">
@@ -174,10 +182,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        style="width: 9%; font-size: 10px"
-                                        class="bg-gray"
-                                    >
+                                    <td style="width: 9%; font-size: 10px" class="bg-gray">
                                         就業先所在地
                                     </td>
                                     <td colspan="3" style="font-size: 14px">
@@ -185,10 +190,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        style="width: 9%; font-size: 10px"
-                                        class="bg-gray"
-                                    >
+                                    <td style="width: 9%; font-size: 10px" class="bg-gray">
                                         責任の程度
                                     </td>
                                     <td colspan="3" style="font-size: 14px">
@@ -197,10 +199,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td
-                                        style="width: 9%; font-size: 10px"
-                                        class="bg-gray"
-                                    >
+                                    <td style="width: 9%; font-size: 10px" class="bg-gray">
                                         従事した業務の種類
                                     </td>
                                     <td colspan="3"></td>
@@ -212,10 +211,7 @@
                         <p class="text-center text-sm">
                             〒060-0001　テスト-1500 1-1-1
                         </p>
-                        <p
-                            class="pl-5"
-                            style="line-height: 1.8; font-size: 13px"
-                        >
+                        <p class="pl-5" style="line-height: 1.8; font-size: 13px">
                             ※注意事項※<br />
                             ・年少者の欄に☑が入っているスタッフについては、<br />
                             　8時間を超える労働または深夜労働が禁止されております。<br />
@@ -231,7 +227,7 @@
                 </tr>
             </tbody>
         </table>
-        <table class="table table-sm table-borderless mt-2 mb-1">
+        <table class="table table-sm table-borderless mb-1">
             <tbody>
                 <tr>
                     <td colspan="11" style="font-size: 16px; width: 60%"></td>
@@ -245,20 +241,10 @@
                     <td colspan="11" style="font-size: 16px; width: 60%">
                         いつもお世話になっております。下記の通り、就業スタッフが確定しましたのでご報告を致します。
                     </td>
-                    <td
-                        class="bg-gray border-gray pt-4 text-center"
-                        colspan="2"
-                        rowspan="3"
-                        style="font-size: 12px; width: 10%"
-                    >
+                    <td class="bg-gray border-gray pt-4 text-center" colspan="2" rowspan="3" style="font-size: 12px; width: 10%">
                         派遣先承認
                     </td>
-                    <td
-                        class="bg-gray border-gray pl-4"
-                        colspan="3"
-                        rowspan="3"
-                        style="width: 15%"
-                    ></td>
+                    <td class="bg-gray border-gray pl-4" colspan="3" rowspan="3" style="width: 15%"></td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -269,10 +255,7 @@
                 </tr>
                 <tr>
                     <td colspan="6" style="width: 38%">
-                        <p
-                            class="text-center bg-gray font-weight-bold border-gray pt-2 pb-2 pl-0 pr-0 m-0"
-                            style="font-size: 16px"
-                        >
+                        <p class="text-center bg-gray font-weight-bold border-gray pt-2 pb-2 pl-0 pr-0 m-0" style="font-size: 16px">
                             FAX：　０３-５９０９-３２０４
                         </p>
                     </td>
@@ -292,5 +275,7 @@
                 </tr>
             </tbody>
         </table>
-    </body>
+    </div>
+</body>
+
 </html>

@@ -83,6 +83,19 @@
             .bg-gray {
                 background-color: #e7e6e6;
             }
+            table {
+                page-break-inside: auto;
+            }
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto;
+            }
+            thead {
+                display: table-header-group;
+            }
+            tfoot {
+                display: table-footer-group;
+            }
         </style>
     </head>
     <body>
